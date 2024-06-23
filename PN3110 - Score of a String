@@ -1,0 +1,19 @@
+class Solution:
+    def scoreOfString(self, s: str) -> int:
+        n = len(s)
+        total = 0
+        
+        for i in range(0,n-1):
+         sum = abs(ord(s[i]) - ord(s[i+1]))
+         total = total + sum
+           
+        return total
+
+"""
+Here we have used here two function here -
+1. ord() 2. abs()
+
+1. ord() - ord() function in python is a built-in function that is used to return an integer representing the Unicode code point of a specified character.
+           Here we have use it ord() beacause we want ASCII value of character.
+
+2. abs() - abs() is used to get the absoulute value that is always positive. we use it to get positive value wheather the value is negative or positive.
