@@ -7,6 +7,7 @@ class Solution:
             i = i+1
         return i
 
+'''
 
 At line 4 we are giving two condiiton
 1. i < len(nums)
@@ -18,3 +19,5 @@ So for that ,
 By Second condition we are checking if the target value that is greater than or equal than the index value then we entering inside the loop....
 and cheking if the target value is equal to index value then return the index.
 or if the value is greater than any of the index then we place the target value just behind the index , where target value is small. and increase the index by +1. and return that index.
+
+'''
